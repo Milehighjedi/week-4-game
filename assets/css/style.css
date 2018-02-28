@@ -1,0 +1,28 @@
+.container {
+    background-image: src= "assets/images/cubivy.jpg";
+}
+
+
+.cubs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cub{
+    border: 1px solid blue;
+    height: 200px;
+    width: 200px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px rgba(0 ,0 ,0, 0.5);
+    
+}
+
+.slideshow{
+    width: 50px;
+    content: "https://goo.gl/images/fstlj2","https://goo.gl/images/i38q68","https://goo.gl/images/QzZorU","https://goo.gl/images/zCxVyj";
+}
+
+.jumbotron{
+    background-color: #6495ED;
+}
