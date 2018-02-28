@@ -86,5 +86,4 @@ $(document).on('click', ".cub", function () {
 
 
 
- //"background-image":"url('" + images[i] + "')",
-            //"background-size":cover"
+ 
