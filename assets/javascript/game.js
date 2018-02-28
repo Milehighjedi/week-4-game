@@ -11,7 +11,7 @@ var losses = 0;
 var wins = 0;
 var total = 0;
 var count = 0;
-var images = ["assets/images/cub1.jpeg","assets/images/cub2.png","assets/images/cub3.png","assets/images/cub4.jpeg"];
+var images = ["assets/images/cub1.jpeg", "assets/images/cub2.png", "assets/images/cub3.png", "assets/images/cub4.jpeg"];
 var image = $(".slideshow");
 
 
@@ -30,25 +30,24 @@ var game = function () {
         var myNumber = Math.floor(Math.random() * 10) + 1;
 
         var cub = $("<div>");
-            cub.attr({
+        cub.attr({
             "class": 'cub',
             "data": myNumber
 
         });
-        cub.css("background-image","url("+images[count++]+")");
+        cub.css("background-image", "url(" + images[count++] + ")");
 
-        setInterval(function(){
-            image.fadeOut(500, function(){
-                image.css("background-image","url("+images[count++]+")");
+        setInterval(function () {
+            image.fadeOut(500, function () {
+                image.css("background-image", "url(" + images[count++] + ")");
                 image.fadeIn(500);
-            
-        });
-        if(count == images.length)
-        {
-            count = 0;
-        }
-    },5000);    
-        
+
+            });
+            if (count == images.length) {
+                count = 0;
+            }
+        }, 5000);
+
 
         $(".cubs").append(cub);
 
@@ -83,3 +82,9 @@ $(document).on('click', ".cub", function () {
 
 
 });
+
+
+
+
+ //"background-image":"url('" + images[i] + "')",
+            //"background-size":cover"
